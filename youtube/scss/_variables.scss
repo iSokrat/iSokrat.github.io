@@ -1,0 +1,77 @@
+$color: #786eff;
+$borderColor: #CB6F72;
+$blockRadius: 5px;
+$fontSize: 16px;
+
+/*Style*/
+$containerVerticalPaddings: 20px;
+
+$headerHeight: 15vh;
+$contentHeight: 70vh;
+$footerHeight: $headerHeight;
+
+/* Grid */
+$countOfColumns: 12;
+$wrapperWidth: 100vw;
+
+/* Columns */
+
+// Lg
+
+// Lg-3
+$countColumnsLg3: $countOfColumns / 3;
+$columnWidthLg3: 20vw;
+$columnMarginLeftLg3: getColumnMargin(
+    $wrapperWidth, 
+    $countColumnsLg3, 
+    $columnWidthLg3
+);
+
+// Md
+
+// Md-4
+$countColumnsMd4: $countOfColumns / 4;
+$columnWidthMd4: 25vw;
+$columnMarginLeftMd4: getColumnMargin(
+    $wrapperWidth,
+    $countColumnsMd4,
+    $columnWidthMd4
+);
+
+// Sm
+
+// Sm-6
+$countColumnsSm6: $countOfColumns / 6;
+$columnWidthSm6: 40vw;
+$columnMarginLeftSm6: getColumnMargin(
+    $wrapperWidth,
+    $countColumnsSm6,
+    $columnWidthSm6
+);
+
+// Xsm
+
+// Xsm-6
+$countColumnsXsm12: $countOfColumns / 12;
+$columnWidthXsm12: 90vw;
+$columnMarginLeftXsm12: getColumnMargin(
+    $wrapperWidth,
+    $countColumnsXsm12,
+    $columnWidthXsm12
+);
+
+/* Video */
+$videoPadding: 10px;
+$videoBorderRadius: $blockRadius;
+$videoBoxShadow: (0px 14px 26px -1px rgba(0, 0, 0, 0.75));
+$videoBackground: white;
+
+/* Inputs */
+$inputFontSize: 20px;
+$inputPadding: (10px 15px);
+$inputBorder: none;
+$inputBorderRadius: $blockRadius;
+$inputFocusBoxShadow: (0px 0px 3px 2px $borderColor);
+
+$searchInputWidth: 200px;
+$searchInputWidthOnFocus: 80%;

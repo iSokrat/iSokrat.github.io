@@ -1,0 +1,7 @@
+@function getColumnMargin(
+    $wrapperWidth, 
+    $columnCount,
+    $columnWidth 
+) {
+    @return ($wrapperWidth - $columnWidth * ($columnCount) ) / ($columnCount);
+}

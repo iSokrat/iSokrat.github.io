@@ -1,0 +1,32 @@
+.input {
+    position: relative;
+	padding: $inputPadding;
+	border:  $inputBorder;
+    text-align: center;
+	font-size: $inputFontSize;
+    width: $searchInputWidth;
+
+    @include border-radius($inputBorderRadius);
+    @include transition(width 0.2s ease-out);
+
+	&:focus {
+		outline: none;
+        width: $searchInputWidthOnFocus;
+		@include box-shadow($inputFocusBoxShadow);
+	}
+}
+
+/*
+.input {
+    position: 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    background: url('../images/sprites/search-icon.png') no-repeat;
+}*/

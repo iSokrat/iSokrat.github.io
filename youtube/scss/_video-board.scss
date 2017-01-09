@@ -1,0 +1,52 @@
+.video {
+	overflow: hidden;
+    background-color: $videoBackground;
+    @include box-sizing(border-box);
+	@include box-shadow($videoBoxShadow);
+	@include border-radius($videoBorderRadius);
+	
+    &-board {
+        @include user-select(none);
+        cursor: default;
+
+		&-preview {
+			img {
+                width: 100%;
+			}
+		}
+
+		&-info {
+		    padding: $videoPadding;
+        	display: block;	
+            
+            .video-description {
+                text-align: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+		}
+	}
+    
+    &-name {
+        text-align: center; 
+        
+        a {
+            text-decoration: none;
+            
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    &-info-list {
+        li {
+            text-align: center;
+            padding-left: 0.5em;
+
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+    }
+}

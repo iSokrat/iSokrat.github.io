@@ -1,0 +1,9 @@
+.wrap-row {
+    margin-left: -$columnMarginLeftLg3 / 2;
+    .column-lg-3 {
+        @include column-settings();
+
+        width: $columnWidthLg3;
+        margin-left: $columnMarginLeftLg3;
+    }   
+}

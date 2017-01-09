@@ -1,0 +1,38 @@
+@mixin box-sizing($type) {
+	webkit-box-sizing: $type;
+	   moz-box-sizing: $type;
+		   box-sizing: $type;
+}
+
+@mixin box-shadow($shadows...) {
+	webkit-box-shadow: $shadows;
+	   moz-box-shadow: $shadows;
+		   box-shadow: $shadows;
+}
+
+@mixin border-radius($radiusSettings...) {
+	webkit-border-radius: $radiusSettings;
+	   moz-border-radius: $radiusSettings;
+		   border-radius: $radiusSettings;
+}
+
+@mixin transition($transitionSettings...) {
+    -webkit-transition: $transitionSettings;
+       -moz-transition: $transitionSettings;
+         -o-transition: $transitionSettings;
+            transition: $transitionSettings;
+}
+
+@mixin user-select($userSelectSettings) {
+    -webkit-user-select: $userSelectSettings;
+       -moz-user-select: $userSelectSettings;
+        -ms-user-select: $userSelectSettings;
+            user-select: $userSelectSettings;
+}
+
+@mixin animation($animationSettings) {
+    -webkit-user-animation: $animationSettings;
+       -moz-user-animation: $animationSettings;
+        -ms-user-animation: $animationSettings;
+            user-animation: $animationSettings;
+}

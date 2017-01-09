@@ -1,0 +1,10 @@
+.wrap-row {
+    margin-left: -$columnMarginLeftSm6 / 2;    
+
+    .column-sm-6 {
+        @include column-settings();
+
+        width: $columnWidthSm6;
+        margin-left: $columnMarginLeftSm6;
+    }
+}

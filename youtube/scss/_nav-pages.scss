@@ -1,0 +1,66 @@
+.nav-pages {
+    text-align: center;
+    font-size: 0;
+
+    %nav-button {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        font-size: $fontSize;        
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: white;
+        @include box-sizing(border-box);
+        @include border-radius(50%);
+        @include transition(background-color 0.2s ease-out);
+    }
+
+    a {
+        background-color: darken($color, 20%);
+        @extend %nav-button;
+    
+        &:not(:first-child) {
+            margin-left: 5px;
+        }
+
+        &:before {
+            content: '';
+            background-color: white;
+
+            position: absolute;
+            top: -2px;
+            left: 12px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            @include border-radius(3% 3% 50% 50%);
+        }
+
+        &:focus {
+            background-color: red;
+        }
+
+        &:hover {
+            background-color: red;
+        }
+    }
+    
+    %prev-next {
+        @extend %nav-button;
+        background-color: red;
+
+        &:hover {
+            background-color: darken($color, 20%);
+        }
+    }
+
+    &-prev {
+        @extend %prev-next;    
+    }
+
+    &-next {
+        @extend %prev-next;    
+    }
+}

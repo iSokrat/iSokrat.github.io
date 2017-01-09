@@ -1,0 +1,10 @@
+.wrap-row { 
+    margin-left: -$columnMarginLeftMd4 / 2; 
+
+    .column-md-4 {
+        @include column-settings();
+
+        width: $columnWidthMd4;
+        margin-left: $columnMarginLeftMd4;
+    }
+}

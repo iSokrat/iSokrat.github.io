@@ -1,0 +1,10 @@
+.wrap-row {
+    margin-left: -$columnMarginLeftXsm12 / 2;
+
+    .column-xsm-12 {
+        @include column-settings();
+
+        width: $columnWidthXsm12;
+        margin-left: $columnMarginLeftXsm12;
+    }
+}

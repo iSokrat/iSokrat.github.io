@@ -1,0 +1,41 @@
+body {
+	font-family: 'Raleway', sans-serif, serif;
+	background-color: $color;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.header,
+.footer {
+    text-align: center;
+    @include box-sizing(border-box);
+}
+
+.header,
+.footer { 
+    padding-top: $containerVerticalPaddings;
+    padding-bottom: $containerVerticalPaddings;
+}
+
+.header { 
+    height: $headerHeight; 
+}
+
+.content { 
+    overflow-y: hidden;
+    overflow: hidden;
+    height: $contentHeight; 
+}
+
+.footer { 
+    height: $footerHeight; 
+}
+
+.h-align-block-center {
+    display: block;
+    margin: 0 auto;   
+}
