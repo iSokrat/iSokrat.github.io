@@ -1,0 +1,84 @@
+/* Icons from sprite */
+
+.ico-things-1, 
+.ico-things-2,
+.ico-things-3, 
+.ico-rrs,
+.ico-facebook, 
+.ico-twitter,
+.ico-flickr, 
+.ico-google, 
+.ico-magnifier,
+/* .ico-12,*/ 
+.ico-cart-white, 
+.ico-gift-white, 
+.ico-arrows-gray, 
+.ico-cart-gray, 
+.ico-gift-gray,
+.ico-arrow-white,
+.ico-arrow-attn { 
+	display: inline-block; 
+	background: url('../media/sprite.png') no-repeat; 
+	overflow: hidden; 
+	text-indent: -9999px; 
+	text-align: left;
+	vertical-align: middle;
+}
+ 
+.ico-things-1 { background-position: -2px 0px; width: 144px; height: 162px; }
+.ico-things-2 { background-position: -2px -164px; width: 142px; height: 162px; }
+.ico-things-3 { background-position: -2px -328px; width: 131px; height: 162px; }
+.ico-rrs { background-position: -2px -492px; width: 54px; height: 54px; }
+.ico-facebook { background-position: -58px -492px; width: 54px; height: 54px; }
+.ico-twitter { background-position: -2px -548px; width: 54px; height: 54px; }
+.ico-flickr { background-position: -58px -548px; width: 54px; height: 54px; }
+.ico-google { background-position: -2px -604px; width: 54px; height: 53px; }
+.ico-magnifier { background-position: -58px -604px; width: 53px; height: 53px; }
+/*.ico-12 { background-position: -2px -659px; width: 34px; height: 31px; }*/
+.ico-cart-white { background-position: -114px -492px; width: 28px; height: 24px; }
+.ico-gift-white { background-position: -114px -518px; width: 23px; height: 25px; }
+.ico-arrows-gray { background-position: -114px -545px; width: 19px; height: 12px; }
+.ico-cart-gray { background-position: -114px -559px; width: 17px; height: 15px; }
+.ico-gift-gray { background-position: -114px -576px; width: 15px; height: 17px; }
+
+.ico-arrow-white { background-position: -2px -659px; width: 20px; height: 32px; }
+.ico-arrow-attn { background-position: -24px -659px; width: 20px; height: 32px; }
+
+/* Custom icons */
+.ico-arrow {
+	-webkit-transform-origin: center;
+	   -moz-transform-origin: center;
+		-ms-transform-origin: center; 
+		 -o-transform-origin: center; 
+}
+
+.ico-arrow-bottom {
+	-webkit-transform: rotate(90deg); 
+       -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+            transform: rotate(90deg); 
+}
+
+.ico-arrow-left {
+	-webkit-transform: rotate(180deg); 
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg); 
+}
+
+.ico-circle {
+	display: inline-block;
+	width: 53px;
+	height: 53px;
+	background-color: white;
+	
+	line-height: 49px;
+	text-align: center;
+	vertical-align: middle;
+
+	-webkit-border-radius: 50%; 
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
