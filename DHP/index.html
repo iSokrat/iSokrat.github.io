@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DHP</title>
+	<script type="module" src="/src/index.js"></script>
+	<link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+	<h1>DHP Algorithm</h1>
+	<form>
+		<label for="points-input">Points</label>
+		<input id="points-input" type="text">
+
+		<label for="mx-range">M<sub>x</sub></label>
+		<input id="mx-range" type="range">
+
+		<label for="my-range">M<sub>y</sub></label>
+		<input id="my-range" type="range">
+	</form>
+	
+	<p>
+		Restored coefficient error:
+		<span id="coef-error">	
+		</span>
+	</p>
+
+	<div class="views">
+		<div class="views__item">
+			<h2>Before: </h2>
+			<canvas id="area-before"></canvas>
+		</div>
+		<div class="views__item">
+			<h2>After: </h2>
+			<canvas id="area-after"></canvas>
+		</div>
+	</div>
+
+	<h2>Matrix:</h2>
+	<div class="views__item-matrix">
+		<div id="table"></div>
+	</div>
+</body>
+</html>
